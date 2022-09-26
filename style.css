@@ -1,48 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin:  0;
-    padding: 0;
-    background-color: rgb(93, 168, 168);
+body {
+    background-image: url("lilo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
 }
 
-li, a {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    color: floralwhite;
-    text-decoration: none;
-}
-
-header {
+h1 {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    padding: 30px 10%;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 300;
+    font-style: italic;
+    color: floralwhite;
+    
 }
 
-.contact {
-    margin-right: auto;
+li {
+    list-style: none;
 }
 
-.nav_links {
-    list-style-type: none;
+.nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
 }
 
-.nav_links li {
+.nav__link a {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 15px 20px;
 }
 
-.nav_links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
+.nav__link a:hover {
     color: #313639;
 }
 
+#smallernav {
+    font-size: 2rem;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: floralwhite;
+    font-size: 2rem;
+}
 
 button {
     font-family: "Quicksand", sans-serif;
@@ -57,10 +63,17 @@ button {
     animation: fadeIn 3s;
 }
 
-.smallsbtn:hover {color: #313639;}
+.smallsbtn:hover {
+    color: #313639;
+}
 
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
